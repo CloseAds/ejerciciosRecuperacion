@@ -40,6 +40,6 @@ public class Producto {
                 ", precio=" + precio + '}';
     }
 
-    //para ordenar posteriormente los productos por el precio;
+
 
 }

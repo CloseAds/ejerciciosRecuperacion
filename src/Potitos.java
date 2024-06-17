@@ -17,7 +17,7 @@ public class Potitos {
 
             for (int i = 0; i < numPotitos; i++) {
                 String[] inputLine = scanner.nextLine().split(" ");
-                String resultado = inputLine[0];//para mostrar la posición con el inputLine;
+                String resultado = inputLine[0];//para mostrar la posición con el inputLine del si o no;
                 Set<String> ingredientes = new HashSet<>(Arrays.asList(inputLine).subList(1, inputLine.length - 1));
 
                 if (resultado.equals("SI:")) {

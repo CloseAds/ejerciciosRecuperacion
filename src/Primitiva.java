@@ -36,7 +36,6 @@ public class Primitiva {
                 }
             }
         }
-
         s.close();
     }
 }
