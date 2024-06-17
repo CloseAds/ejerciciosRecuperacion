@@ -25,7 +25,7 @@ public class Potitos {
                 } else if (resultado.equals("NO:")) {
                     ingredientesNoGustados.addAll(ingredientes);
                 } else {
-                    throw new IllegalArgumentException("El listado debe comenzar por SI: o NO: .");
+                    System.out.println("El listado debe comenzar por SI: o NO: .");;
                 }
             }
 

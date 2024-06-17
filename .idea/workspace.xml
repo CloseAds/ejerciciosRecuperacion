@@ -7,8 +7,10 @@
     <list default="true" id="0c68cbb6-b0fa-4401-997f-39fe349362f1" name="Changes" comment="ej">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Potitos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Potitos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Primitiva.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Primitiva.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gestion_productos/GestionProductosMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestion_productos/GestionProductosMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gestion_productos/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gestion_productos/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gestion_productos/almacen.dat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718605292856</updated>
       <workItem from="1718605293984" duration="10319000" />
-      <workItem from="1718617666547" duration="2267000" />
+      <workItem from="1718617666547" duration="5325000" />
     </task>
     <task id="LOCAL-00001" summary="ej">
       <option name="closed" value="true" />
@@ -67,7 +69,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718615395771</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ej">
+      <option name="closed" value="true" />
+      <created>1718620108774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718620108774</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +95,20 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gestion_productos/GestionProductosMain.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gestion_productos/GestionProductosMain.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -7,12 +7,10 @@ public class GestionProductosMain implements Serializable {
 
     private final static Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) {
-
-        final Map<String, List<Producto>> listadoTiendas = new TreeMap<>();
+    public static void main(String[] args) throws IOException {
 
         //se pone al principio (cuando se inicialice el programa);
-        cargarTiendas(listadoTiendas);
+        Map<String, List<Producto>> listadoTiendas = cargarTiendas();
 
         boolean salir = false;
         while (!salir) {
@@ -95,23 +93,27 @@ public class GestionProductosMain implements Serializable {
         System.out.print("Tienda: ");
         return sc.nextLine();
     }
-    public static void guardarTiendas(Map<String, List<Producto>> listadoTiendas) {
+    public static void guardarTiendas(Map<String, List<Producto>> listadoTiendas) throws IOException {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("almacen.dat"))) {
             oos.writeObject(listadoTiendas);
             System.out.println("Productos guardados con éxito.");
         } catch (IOException e) {
-            throw new IllegalArgumentException("Error: " + e.getMessage());
+            e.printStackTrace();
+            throw e;
         }
     }
 
-    public static void cargarTiendas(Map<String, List<Producto>> listadoTiendas) {
+    public static Map<String, List<Producto>> cargarTiendas() {
+        Map<String, List<Producto>> listadoTiendas = null;
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("almacen.dat"))) {
-            Map<String, List<Producto>> tiendasCargadas = (Map<String, List<Producto>>) ois.readObject();
-            listadoTiendas.putAll(tiendasCargadas);
+            listadoTiendas = (Map<String, List<Producto>>) ois.readObject();
+            //listadoTiendas.putAll(tiendasCargadas);
             System.out.println("Productos cargados con éxito.");
         } catch (IOException | ClassNotFoundException e) {
-            throw new IllegalArgumentException("Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
+            listadoTiendas = new TreeMap<String,List<Producto>>();
         }
+        return listadoTiendas;
     }
 
     private static void mainEstudiantes(List<Producto> listadoProductos) {
